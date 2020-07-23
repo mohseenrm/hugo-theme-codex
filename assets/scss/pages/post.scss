@@ -64,7 +64,7 @@ $tocBreakpoint: 1024px;
 }
 
 .post__date {
-  color: $grey;
+  color: var(--nav-passive-color);
   font-size: 0.8rem;
 }
 
@@ -196,11 +196,11 @@ $tocBreakpoint: 1024px;
 footer {
   text-align: center;
   padding: 0 1.5rem;
-  background: #ffffff;
+  background: var(--primary-color);
 
   p {
     margin-top: 1rem; // reduce margin top due to social icons' padding
-    color: $grey;
+    color: var(--nav-passive-color);
     font-size: 0.65rem;
   }
 }

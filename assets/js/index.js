@@ -1,33 +1,28 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-  /*
-   * Handles mobile nav
-   */
-
+  /* Handles mobile nav */
   function toggleMobileNavState() {
-    const body = document.querySelector("body");
+    var body = document.querySelector("body");
     body.classList.toggle("nav--active");
   }
 
-  /*
-   * Initializes burger functionality
-   */
-
+  /* Burger functionality */
   function initBurger() {
-    const burger = document.querySelector(".burger");
+    var burger = document.querySelector(".burger");
     burger.addEventListener("click", toggleMobileNavState);
   }
 
-  initBurger();
+  /* Dark/Light toggle */
+  var toggle = document.getElementById('theme-toggle');
 
-  const toggle = document.getElementById('theme-toggle');
-
-  toggle.addEventListener('change', (e) => {
+  toggle.addEventListener('change', function(e) {
     if(e.target.checked) {
       document.documentElement.setAttribute('data-theme', 'dark');
       return;
     }
     document.documentElement.setAttribute('data-theme', 'light');
   });
+
+  initBurger();
 });
