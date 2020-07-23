@@ -30,13 +30,13 @@
 }
 
 .fancy {
-  color: $primary;
+  color: var(--highlight-color);
 }
 
 .handle {
   display: inline-block;
   margin-top: 0.275em;
-  color: $grey;
+  color: var(--nav-passive-color);
   letter-spacing: 0.5px;
 }
 

@@ -6,14 +6,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
   visibility: hidden;
   z-index: 1;
+  height: 100%;
+
+  background-color: var(--primary-color);
+  color: var(--font-color);
 
   @media screen and (min-width: $medium) {
     display: block;
     visibility: visible;
-    padding-top: 3em;
+    padding-top: 3rem;
     width: $navWidth;
   }
 }
@@ -64,16 +67,16 @@
 }
 
 .nav__list a {
-  color: $grey;
+  color: var(--nav-passive-color);
   text-decoration: none;
   font-size: 2em;
 
   &.active {
-    color: $black;
+    color: var(--nav-active-color);
   }
 
   &:hover {
-    color: $black;
+    color: var(--nav-active-color);
   }
 
   @media screen and (min-width: $medium) {

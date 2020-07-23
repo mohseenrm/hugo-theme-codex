@@ -5,3 +5,18 @@ $navWidth: 100px;
 $meatWidth: 28px;
 $meatHeight: 2px;
 $burgerContainerHeight: 4rem;
+
+:root {
+  --primary-color: #fff;
+  --font-color: #000;
+  --highlight-color: #e0000f;
+  --nav-passive-color: #575757;
+  --nav-active-color: #0B0A0A;
+}
+
+[data-theme="dark"] {
+  --primary-color: #000;
+  --font-color: #fff;
+  --nav-passive-color: #aaa9a9;
+  --nav-active-color: #FDFFFC;
+}

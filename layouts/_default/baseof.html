@@ -24,6 +24,7 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
   <!-- Styles -->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
   {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
   {{ $base_styles_opts := .Scratch.Get "style_opts" | default (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
   {{ $custom_styles_opts := (dict "src" "scss/custom.scss" "dest" "css/custom.css") }}
@@ -50,6 +51,8 @@
   {{ partial "burger.html" .}} 
 
   {{ partial "nav.html" .}}
+
+  {{ partial "theme-toggle.html" }}
 
   <main>
     {{ block "main" . }} {{ end }}
