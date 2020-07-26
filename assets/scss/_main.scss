@@ -5,6 +5,7 @@
 @import "partials/nav";
 @import "partials/social-icons";
 @import "partials/dark_light_toggle";
+@import "partials/404";
 
 body.nav--active {
   overflow: hidden;
@@ -21,4 +22,12 @@ main {
   @media screen and (max-width: $medium - 1) {
     padding-top: calc(3rem + #{$burgerContainerHeight});
   }
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+p, span {
+  // font-family: var(--content-font);
 }
