@@ -18,7 +18,13 @@
 }
 
 .post {
-  margin-bottom: 1.5rem;
+  margin: 9vh 0vh;
+
+  &:first-child {
+    @media screen and (max-width: $medium - 1) {
+      margin-top: 0vh;
+    }
+  }
 }
 
 .post__title {
@@ -26,12 +32,13 @@
   font-weight: 500;
 
   a {
-    color: $black;
+    color: var(--link-color);
     text-decoration: none;
   }
 }
 
 .post__date {
-  color: $grey;
+  color: var(--nav-passive-color);
   font-size: 0.8rem;
+  margin-bottom: 1.4rem;
 }

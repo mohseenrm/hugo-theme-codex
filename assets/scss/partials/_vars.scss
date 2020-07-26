@@ -12,6 +12,7 @@ $burgerContainerHeight: 4rem;
   --highlight-color: #e0000f;
   --nav-passive-color: #575757;
   --nav-active-color: #0B0A0A;
+  --link-color: #02020B;
 }
 
 [data-theme="dark"] {
@@ -19,4 +20,5 @@ $burgerContainerHeight: 4rem;
   --font-color: #fff;
   --nav-passive-color: #aaa9a9;
   --nav-active-color: #FDFFFC;
+  --link-color: #d9ded9;
 }
